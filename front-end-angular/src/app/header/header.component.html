@@ -1,0 +1,12 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>  Happy Graph --- Application Logo Here !!!</span>
+    <span class="example-fill-remaining-space"></span>
+    <span class="align-center"></span>
+    <span class="example-spacer"></span>
+    <span *ngIf="true">{{username}}</span>
+    <button mat-button>About</button>
+    <button mat-button>Contact</button>
+    <button mat-button *ngIf="username !== ''" (click)="logOut()">Logout</button>
+  </mat-toolbar-row>
+</mat-toolbar>
